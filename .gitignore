@@ -84,3 +84,6 @@ Desktop.ini
 
 # Logs
 *.log
+
+# MkDocs generated site
+site/

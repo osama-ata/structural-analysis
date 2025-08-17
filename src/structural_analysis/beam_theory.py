@@ -41,7 +41,7 @@ class BeamTheory:
         Args:
             length: Beam length (m)
             E: Elastic modulus (Pa)
-            I: Second moment of area (m^4)
+            second_moment: Second moment of area (m^4)
             load_type: Type of loading ("point", "distributed", "moment")
             load_magnitude: Load magnitude (N for point, N/m for distributed,
                 N*m for moment)

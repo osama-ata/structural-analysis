@@ -70,7 +70,7 @@ def euler_bernoulli(self, L: float, E: float, I: float):
 
 ### Step 1: Plan Your Theory
 
-Review the [development roadmap](roadmap.md) to see planned theories or propose a new one:
+Review the [development roadmap](development/roadmap.md) to see planned theories or propose a new one:
 
 - Check if your theory is already listed in `roadmap.csv`
 - For new theories, ensure they fit the library's scope and patterns
