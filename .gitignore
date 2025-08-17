@@ -61,10 +61,10 @@ venv.bak/
 .idea/
 .vscode/
 
-# Temporary test files
-test_*.py
-*_test.py
-temp_*.py
+# Temporary test files (but keep main test files)
+temp_test_*.py
+test_temp_*.py
+test_readme_examples.py
 
 # Jupyter Notebook
 .ipynb_checkpoints
