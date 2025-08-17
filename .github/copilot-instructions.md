@@ -2,11 +2,12 @@
 
 ## Project Architecture
 
-This is a **CSV-driven structural analysis library** that implements engineering theories from `structural_analysis_theories_comprehensive.csv`. The core pattern:
+This is a **structural analysis library** that implements comprehensive engineering theories for beams, columns, plates, and other structural elements. The core pattern:
 
-- Each CSV **Category** becomes a Python module (e.g., "Beam Theory" → `beam_theory.py`)
-- Each **Theory Name** becomes a method (e.g., "Euler-Bernoulli" → `euler_bernoulli()`)
+- Each structural theory category becomes a Python module (e.g., "Beam Theory" → `beam_theory.py`)
+- Each theory becomes a method (e.g., "Euler-Bernoulli" → `euler_bernoulli()`)
 - Main facade class `StructuralAnalysis` exposes all theory modules via properties
+- Development roadmap is maintained in `docs/development/roadmap.csv`
 
 ## Critical Development Patterns
 
@@ -82,10 +83,10 @@ print(f'Max deflection: {result[\"max_deflection\"]:.6f} m')
 
 ## Data Flow Architecture
 
-1. **CSV Theory Database** → defines all methods and their engineering context
-2. **Theory Module Classes** → implement computational methods with numpy
-3. **StructuralAnalysis Facade** → provides unified access to all theories
-4. **Test Suite** → validates against analytical solutions (not just unit tests)
+1. **Theory Module Classes** → implement computational methods with numpy
+2. **StructuralAnalysis Facade** → provides unified access to all theories
+3. **Test Suite** → validates against analytical solutions (not just unit tests)
+4. **Development Roadmap** → tracked in `docs/development/roadmap.csv`
 
 ## Integration Points
 
@@ -99,4 +100,4 @@ print(f'Max deflection: {result[\"max_deflection\"]:.6f} m')
 - Return format consistency: Always `Dict[str, Union[np.ndarray, float]]`
 - Include max values for engineering review: `max_deflection`, `max_moment`, etc.
 - Validation patterns check for physical constraints (positive lengths, non-zero loads)
-- Docstrings must include theory assumptions and applications from CSV data
+- Docstrings must include theory assumptions and applications from engineering literature

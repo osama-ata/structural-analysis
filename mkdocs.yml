@@ -1,0 +1,173 @@
+site_name: Structural Analysis Library
+site_description: A comprehensive Python library for structural engineering analysis
+site_author: Osama Ata
+site_url: https://osama-ata.github.io/structural-analysis/
+
+repo_name: osama-ata/structural-analysis
+repo_url: https://github.com/osama-ata/structural-analysis
+
+theme:
+  name: material
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - navigation.top
+    - search.highlight
+    - search.share
+    - search.suggest
+    - content.code.copy
+    - content.code.select
+    - content.code.annotate
+
+  icon:
+    repo: fontawesome/brands/github
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      normalize_issue_symbols: true
+      repo_url_shorthand: true
+      user: osama-ata
+      repo: structural-analysis
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+extra_css:
+  - stylesheets/extra.css
+
+plugins:
+  - search:
+      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  - mkdocstrings:
+      handlers:
+        python:
+          options:
+            docstring_style: google
+            docstring_options:
+              ignore_init_summary: true
+            docstring_section_style: table
+            filters: ["!^_"]
+            heading_level: 1
+            inherited_members: true
+            merge_init_into_class: true
+            separate_signature: true
+            show_root_heading: true
+            show_root_full_path: false
+            show_signature_annotations: true
+            show_symbol_type_heading: true
+            show_symbol_type_toc: true
+            signature_crossrefs: true
+            summary: true
+  - mkdocs-jupyter:
+      include_source: True
+      execute: false
+
+nav:
+  - Home: index.md
+  - Getting Started:
+      - Installation: getting-started/installation.md
+      - Quick Start: getting-started/quick-start.md
+      - Basic Concepts: getting-started/concepts.md
+  - Theory Guide:
+      - Overview: theories/index.md
+      - Beam Theory:
+          - Euler-Bernoulli: theories/beam-theory/euler-bernoulli.md
+          - Timoshenko: theories/beam-theory/timoshenko.md
+      - Column Theory:
+          - Euler Buckling: theories/column-theory/euler-buckling.md
+          - Advanced Methods: theories/column-theory/advanced.md
+      - Advanced Theories: theories/advanced.md
+  - Examples:
+      - Overview: examples/index.md
+      - Beam Analysis: examples/beam-analysis.md
+      - Column Design: examples/column-design.md
+      - Case Studies: examples/case-studies.md
+  - API Reference:
+      - Overview: api/index.md
+      - Beam Theory: api/beam-theory.md
+      - Column Theory: api/column-theory.md
+      - Core Classes: api/core.md
+  - Development:
+      - Contributing: contributing.md
+      - Architecture: development/architecture.md
+      - Adding Theories: development/adding-theories.md
+      - Roadmap: development/roadmap.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/osama-ata
+    - icon: fontawesome/brands/python
+      link: https://pypi.org/project/structural-analysis/
+  generator: false
+
+copyright: Copyright &copy; 2025 Osama Ata - Made with Material for MkDocs

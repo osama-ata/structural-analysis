@@ -39,4 +39,10 @@ addopts = "-ra -q"
 testpaths = ["tests"]
 
 [dependency-groups]
-dev = ["pytest>=8.3.5"]
+dev = [
+    "mkdocs-jupyter>=0.24.8",
+    "mkdocs-material>=9.6.17",
+    "mkdocstrings[python]>=0.26.1",
+    "pymdown-extensions>=10.15",
+    "pytest>=8.3.5",
+]

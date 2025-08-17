@@ -1,0 +1,55 @@
+/* Custom styling for the structural analysis documentation */
+
+/* Engineering-specific styling */
+.md-typeset .admonition.theory {
+  border-color: #1976d2;
+}
+
+.md-typeset .admonition.theory > .admonition-title {
+  background-color: rgba(25, 118, 210, 0.1);
+  border-color: #1976d2;
+}
+
+.md-typeset .admonition.theory > .admonition-title::before {
+  background-color: #1976d2;
+  mask-image: var(--md-admonition-icon--note);
+}
+
+/* Code block enhancements */
+.md-typeset .highlight {
+  margin: 1em 0;
+}
+
+/* Math equation styling */
+.MathJax {
+  font-size: 1.1em !important;
+}
+
+/* API documentation styling */
+.doc-heading {
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Engineering symbols and units */
+.engineering-unit {
+  font-family: var(--md-code-font);
+  font-size: 0.9em;
+  color: var(--md-code-fg-color);
+  background-color: var(--md-code-bg-color);
+  padding: 0.1em 0.3em;
+  border-radius: 0.2em;
+}
+
+/* Theory comparison tables */
+.md-typeset table:not([class]) th {
+  background-color: var(--md-primary-fg-color--light);
+  color: var(--md-primary-bg-color);
+  font-weight: 600;
+}
+
+/* Navigation enhancements */
+.md-nav__title {
+  font-weight: 600;
+}

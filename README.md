@@ -4,11 +4,11 @@ A comprehensive Python library for structural engineering analysis implementing 
 
 ## 🚀 Features
 
-- **CSV-Driven Architecture**: Theories automatically generated from comprehensive engineering database
 - **Complete Type Safety**: Full type annotations and validated inputs
 - **Engineering-Focused**: Designed by engineers, for engineers
 - **Analytical Verification**: All implementations tested against known analytical solutions
 - **Modern Python**: Built with UV package management and Ruff linting
+- **Comprehensive Theory Coverage**: Implementation of classical and advanced structural analysis theories
 
 ## 📦 Installation
 
@@ -153,7 +153,7 @@ All analysis methods return structured dictionaries with both arrays and scalars
 
 ## 🏛️ Architecture
 
-The library follows a CSV-driven architecture where:
+The library follows a modular architecture where:
 
 1. **Categories** (e.g., "Beam Theory") → Python modules (`beam_theory.py`)
 2. **Theory Names** (e.g., "Euler-Bernoulli") → Class methods (`euler_bernoulli()`)
@@ -205,10 +205,13 @@ uv shell
 
 ### Adding New Theories
 
-1. Add theory to `structural_analysis_theories_comprehensive.csv`
-2. Implement method in appropriate module (e.g., `beam_theory.py`)
-3. Add comprehensive tests with analytical verification
-4. Run quality checks: `ruff format . && ruff check . --fix`
+1. **Plan Theory**: Reference the [development roadmap](https://osama-ata.github.io/structural-analysis/development/roadmap/) for planned theories
+2. **Implement Method**: Add method to appropriate module (e.g., `beam_theory.py`) following established patterns
+3. **Write Tests**: Create comprehensive tests with analytical verification (see contributing guide)
+4. **Quality Checks**: Run `ruff format . && ruff check . --fix && uv run pytest tests/ -v`
+5. **Documentation**: Update theory docs and examples
+
+See our [Contributing Guide](https://osama-ata.github.io/structural-analysis/contributing/) for detailed implementation guidelines.
 
 ## 📖 Engineering Background
 

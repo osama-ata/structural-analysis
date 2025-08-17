@@ -1,0 +1,47 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: Structural Analysis Library
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Osama
+    family-names: Ata
+    email: me@osamata.com
+    orcid: "https://orcid.org/0009-0006-2951-5712"
+identifiers:
+  - type: url
+    value: "https://github.com/osama-ata/structural-analysis"
+repository-code: "https://github.com/osama-ata/structural-analysis"
+url: "https://github.com/osama-ata/structural-analysis"
+abstract: >-
+  A comprehensive Python library for structural engineering
+  analysis implementing various theoretical frameworks
+  for beams, columns, plates, and other structural elements.
+  The library features complete type safety, analytical
+  verification of all implementations, and modern Python
+  development practices including UV package management
+  and Ruff linting. Designed by engineers for engineers,
+  it provides easy access to fundamental structural theories
+  including Euler-Bernoulli beam theory, Timoshenko beam
+  theory, Euler buckling analysis, and many other classical
+  and advanced structural analysis methods.
+keywords:
+  - structural-engineering
+  - beam-analysis
+  - column-buckling
+  - engineering-software
+  - python
+  - civil-engineering
+  - mechanical-engineering
+  - finite-element-analysis
+  - euler-bernoulli
+  - timoshenko-beam
+  - analytical-verification
+  - type-safe
+license: MIT
+version: 0.1.0
+date-released: "2025-08-17"
