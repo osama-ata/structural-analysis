@@ -1,0 +1,44 @@
+Category,Theory Name,Description,Key Assumptions,Primary Applications,Advantages,Limitations
+Beam Theory,Euler-Bernoulli,Classical beam bending,"Small deflections, plane sections remain plane","Slender beams, static loads","Simple, widely applicable","Inaccurate for thick beams, neglects shear"
+Beam Theory,Timoshenko,Includes shear deformation,Accounts for shear and rotary inertia,"Thick beams, dynamic analysis",More accurate for short beams,More complex than Euler-Bernoulli
+Beam Theory,Reddy-Bickford,Higher-order shear theory,Advanced shear deformation modeling,Composite/laminated beams,High accuracy for composites,Complex mathematics
+Beam Theory,Levinson,Higher-order beam theory,Refined shear behavior,Multilayered structures,Excellent for thick composites,Research-level complexity
+Beam Theory,Nonlinear Beam,Large deformation theory,Geometric/material nonlinearity,"Flexible structures, large loads",Handles large deformations,Computationally intensive
+Column Theory,Euler Buckling,Elastic buckling theory,"Linear elastic, perfect column","Long, slender columns",Simple critical load formula,Only for very slender columns
+Column Theory,Rankine-Gordon,Combined buckling-crushing,Empirical blend of failure modes,All column lengths,Practical for all columns,Requires material calibration
+Column Theory,Johnson Parabolic,Inelastic buckling,Accounts for material yielding,Intermediate length columns,Good for ductile materials,Empirical constants needed
+Column Theory,Plastic Buckling,Inelastic analysis,Beyond yield point behavior,Ductile material columns,Accurate for yielding columns,Complex analysis required
+Plate/Shell Theory,Kirchhoff (Thin),Classical plate theory,Neglects transverse shear,Thin plates/shells,"Simple, well-established",Poor for thick structures
+Plate/Shell Theory,Mindlin-Reissner (Thick),Includes transverse shear,Accounts for shear deformation,Thick plates/shells,Accurate for thick structures,More complex analysis
+Plate/Shell Theory,Membrane,No bending resistance,Pure in-plane behavior,Very thin structures,Simple stress analysis,No bending capability
+Plane Theory,Plane Stress,Thin body analysis,Out-of-plane stress = 0,"Thin plates, sheets",2D simplification,Only for thin structures
+Plane Theory,Plane Strain,Thick body analysis,Out-of-plane strain = 0,"Long walls, dams",2D simplification,Only for constrained structures
+Force Method,Consistent Deformation,Flexibility approach,Forces as primary unknowns,Statically indeterminate structures,Direct force calculation,Complex for highly indeterminate
+Force Method,Virtual Work/Unit Load,Energy-based method,Work-energy principles,Deflection calculations,"Versatile, accurate",Requires careful load application
+Force Method,Three-Moment Theorem,Continuous beam method,Moment equilibrium,Multi-span beams,Simple for beams,Limited to beam structures
+Displacement Method,Slope-Deflection,Joint displacement method,Rotations/translations as unknowns,Indeterminate frames,Systematic approach,Manual calculations intensive
+Displacement Method,Moment Distribution,Iterative method,Load balancing approach,Continuous structures,Good for hand calculations,Slow convergence
+Displacement Method,Stiffness Matrix,Matrix structural analysis,Equilibrium in matrix form,Computer analysis,"Systematic, programmable",Requires computer implementation
+Displacement Method,Finite Element,Numerical discretization,Approximate solution technique,Complex geometries,Handles Any geometry,Requires mesh generation
+Energy Method,Castigliano's Theorem,Strain energy method,Energy derivatives,Deflection calculations,Direct deflection method,Limited to linear systems
+Energy Method,Minimum Potential Energy,Variational principle,Energy minimization,Approximate solutions,Fundamental principle,Requires assumed functions
+Energy Method,Rayleigh-Ritz,Approximate energy method,Trial function approach,Complex boundary conditions,Flexible solution method,Accuracy depends on functions
+Material Theory,Linear Elastic,Hooke's Law,Stress proportional to strain,Most engineering materials,"Simple, well-understood",Limited to small strains
+Material Theory,Elastic-Plastic,Beyond yield behavior,Permanent deformation,Metal structures,Realistic material behavior,Complex stress-strain relations
+Material Theory,Viscoelastic,Time-dependent behavior,Creep and relaxation,"Polymers, concrete",Accounts for time effects,Time-dependent analysis required
+Material Theory,Orthotropic/Anisotropic,Directional properties,Different properties in directions,Composite materials,Accurate for composites,Complex material constants
+Nonlinear Theory,Geometric Nonlinear,Large displacement,P-Delta effects,Slender structures,Accurate for large deformations,Iterative solution required
+Nonlinear Theory,Material Nonlinear,Plasticity theory,Stress-strain nonlinearity,Beyond elastic limit,Realistic material behavior,Complex constitutive relations
+Nonlinear Theory,Contact Nonlinear,Surface interaction,Contact and separation,Assembly analysis,Realistic boundary conditions,Convergence difficulties
+Stability Theory,Linear Stability,Eigenvalue buckling,Critical load determination,Buckling analysis,Critical load calculation,Linear assumption only
+Stability Theory,Nonlinear Stability,Post-buckling analysis,Beyond critical load,Ultimate capacity,Complete load-deflection curve,Complex numerical analysis
+Stability Theory,Bifurcation Theory,Multiple equilibrium paths,Branch point analysis,Complex stability problems,Identifies instability modes,Advanced mathematical concepts
+Dynamic Theory,Modal Analysis,Natural frequency analysis,Eigenvalue problem,Vibration analysis,Fundamental dynamic properties,Linear systems only
+Dynamic Theory,Frequency Response,Harmonic analysis,Steady-state response,Machine vibrations,Direct frequency domain,Limited to harmonic loading
+Dynamic Theory,Transient Response,Time history analysis,Dynamic equilibrium,"Earthquake, impact loads",Complete time response,Computationally intensive
+Dynamic Theory,Nonlinear Dynamic,Nonlinear time analysis,Large motion dynamics,Extreme dynamic loads,Realistic dynamic behavior,Very complex analysis
+Fracture Theory,LEFM,Linear elastic fracture,Stress intensity factors,Brittle fracture,Well-established theory,Limited to small plastic zones
+Fracture Theory,Elastic-Plastic Fracture,J-integral approach,Large-scale yielding,Ductile fracture,Accounts for plasticity,Complex parameter evaluation
+Specialized Theory,Composite Laminate,Layered material theory,Layer-wise analysis,Composite structures,Accurate for laminates,Complex layer interactions
+Specialized Theory,Smart Materials,Multi-physics coupling,Electro-mechanical behavior,Adaptive structures,Advanced functionality,Requires specialized software
+Specialized Theory,Multi-Physics,Coupled field analysis,Thermal-structural coupling,Multi-disciplinary problems,Comprehensive analysis,Highly complex modeling

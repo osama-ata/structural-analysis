@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "structural-analysis"
+version = "0.1.0"
+authors = [{ name = "Osama Ata", email = "me@osamata.com" }]
+description = "A comprehensive library for structural analysis theories."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = ["numpy"]
+
+[project.optional-dependencies]
+dev = ["ruff", "pytest"]
+
+[project.urls]
+"Homepage" = "https://github.com/osama-ata/structural-analysis"
+"Bug Tracker" = "https://github.com/osama-ata/structural-analysis/issues"
+
+[tool.ruff]
+line-length = 88
+
+[tool.ruff.lint]
+# Enable Pyflakes, pycodestyle, and isort rules
+select = ["E", "F", "I"]
+
+[tool.ruff.format]
+quote-style = "double"
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q"
+testpaths = ["tests"]
+
+[dependency-groups]
+dev = ["pytest>=8.3.5"]
